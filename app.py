@@ -4,7 +4,7 @@ from transformers import pipeline
 # Set up the LLaMA 3.2 model (using Hugging Face pipeline)
 @st.cache_resource
 def load_llama_model():
-    return pipeline('text-generation', model='meta-llama/Llama-2-7b-hf')
+    return pipeline('text-generation', model='meta-llama/Llama-3.2-7b-hf')
 
 # Load the model
 llama_generator = load_llama_model()
