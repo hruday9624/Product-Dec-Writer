@@ -44,14 +44,28 @@ if product_name and product_features and target_audience:
     Product Features: {product_features}
     Target Audience: {target_audience}
     """
+# Button to submit the prompt
 if st.button("Generate"):
-    # Call to Google Gemini API
-    response = genai.generate(prompt)
-    if response:
-        st.subheader("Generated Product Description:")
-        st.write(response)
+    if product_name and product_features and target_audience:
+        try:
+            # Initialize the generative model (assuming this is the correct model)
+            model = genai.GenerativeModel('gemini-pro')  # Adjust the model if needed
+
+            # Generate content based on the prompt
+            response = model.generate_content(prompt)
+            
+            # Check if there is a response from the model
+            if response:
+                st.subheader("Generated Product Description:")
+                st.write(response.text)  # Displaying the text from the response
+            else:
+                st.error("Error: Unable to generate the description.")
+                
+        except Exception as e:
+            st.error(f"Error: {e}")
     else:
-        st.write("Error: Unable to generate the description.")
+        st.error("Please fill in all the product details to generate a description.")
+
 
 
 # Add some space or content in between
