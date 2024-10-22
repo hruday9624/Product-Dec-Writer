@@ -1,4 +1,7 @@
 streamlit
 transformers  # Use a stable version
 torch  # Hugging Face models need this
-google.generativeai
+google-generative-ai
+
+#streamlit==1.26.0
+#google-generative-ai==0.1.0
