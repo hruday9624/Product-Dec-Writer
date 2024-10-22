@@ -11,5 +11,5 @@ product_features = st.text_area('Product Features (comma separated)', '')
 target_audience = st.text_input('Target Audience', '')
 
 # Footer
-st.sidebar.markdown("---")
-st.sidebar.markdown("Built with 🧠 by Hruday & Ollama")
+#st.sidebar.markdown("---")
+st.markdown("Built with 🧠 by Hruday & Ollama")
