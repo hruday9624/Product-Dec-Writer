@@ -44,6 +44,14 @@ if product_name and product_features and target_audience:
     Product Features: {product_features}
     Target Audience: {target_audience}
     """
+if st.button("Generate"):
+    # Call to Google Gemini API
+    response = genai.generate(prompt)
+    if response:
+        st.subheader("Generated Product Description:")
+        st.write(response)
+    else:
+        st.write("Error: Unable to generate the description.")
 
 
 # Add some space or content in between
