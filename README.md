@@ -10,7 +10,7 @@ pinned: false
 license: apache-2.0
 ---
 
-## Prod Desc Writer 🏢
+## Personalized Product Description Writer 🏢
 
 **Prod Desc Writer** is an AI-powered app designed to generate engaging and high-quality product descriptions. Whether you're an e-commerce seller, a marketer, or a business owner, this app helps you craft compelling content that highlights your product’s unique features, appeals to your target audience, and boosts sales.  
 
