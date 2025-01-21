@@ -1,5 +1,5 @@
 ---
-title: Prod Desc Writer
+title: Personalized Product Description Writer
 emoji: 🏢
 colorFrom: red
 colorTo: gray
